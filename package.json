@@ -1,0 +1,27 @@
+{
+  "name": "toisnfe",
+  "version": "1.0.0",
+  "description": "The begining of the project that will be the web frontend for the system for sports",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bclincy/toisn.git"
+  },
+  "keywords": [
+    "sports",
+    "sports",
+    "network"
+  ],
+  "author": "Brian Clincy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bclincy/toisn/issues"
+  },
+  "homepage": "https://github.com/bclincy/toisn#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
