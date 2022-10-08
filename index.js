@@ -10,6 +10,9 @@ let currentlyDemoing = false;
 let currentPage = 0;
 let slidesPerPage = () => window.innerWidth > 1700 ? 4 : window.innerWidth > 1200 ? 3 : 2;
 let maxPageCount = () => slideCount / slidesPerPage() - 1;
+let more = [ 'more', 'more' ].map(n => document.getElementById(n));
+
+
 
 function goToPage(pageNumber = 0) {
 	currentPage = Math.min(maxPageCount(), Math.max(0, pageNumber));
@@ -70,6 +73,8 @@ async function demo() {
 next.forEach(n => n.addEventListener('click', () => !currentlyDemoing && goToPage(currentPage + 1)));
 prev.forEach(n => n.addEventListener('click', () => !currentlyDemoing && goToPage(currentPage - 1)));
 menu.addEventListener('click', demo);
+more.forEach(n => n.addEventListener('click', () => !currentlyDemoing && goToPage(currentPage - 1)))
+
 
 sleep(100).then(demo);
 
@@ -78,3 +83,26 @@ sleep(100).then(demo);
 // });
 
 /* requestAnimationFrame */
+
+// button for splash page 
+let btn = document.querySelector('button');
+let .splash = document.querySelector('div');
+
+btn.addEventListener('click', ()=>{
+  if(div.style.display === 'none'){
+    div.style.display = 'block';
+    
+  }
+  else { div.style.display = 'none';}
+})
+
+// A new functioning button i figured out 
+function closeHero(){
+	var x = document.getElementById("getSplash");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	}
+	else {
+		x.style.display = "none";
+	}
+}
